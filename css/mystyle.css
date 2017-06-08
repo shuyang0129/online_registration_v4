@@ -5,3 +5,63 @@ Base Element
 body {
 	font-family: 'Cormorant Infant', serif;
 }
+
+h1#title {
+	
+	/* Topbar */
+	width: 100%;
+	min-width: 320px;
+	max-width: 1200px;
+	height: 3.5rem;
+	background: #2D3945;
+
+	/* Font Attribute */
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+
+	/* Font Alignment & Position */
+	text-align: center;
+	line-height: 3.5rem;
+	padding: 0;
+	margin: 0 auto;	
+	
+}
+
+h2,
+legend {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 13px;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.2;
+	margin-bottom: 36px;
+}
+
+/*===========================
+Container
+===========================*/
+
+.container {
+	text-align: center;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+/*===========================
+Color
+===========================*/
+
+.primary_color {
+	color: #2D3945;
+}
+
+.light_color {
+	color: #B1B5B9;
+}
+

@@ -246,6 +246,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  border: 0;
 }
 
 /**
@@ -310,6 +311,7 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+  border: 0;
 }
 
 /**

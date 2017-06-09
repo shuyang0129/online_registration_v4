@@ -221,8 +221,13 @@ Media Querry
 
 	.one_line input,
 	.one_line select {
-		width: 80%;
+		width: 70%;
 		float: right;
+	}
+	.one_line > label {
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 50px;
 	}
 }
 

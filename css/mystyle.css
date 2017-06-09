@@ -126,8 +126,8 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
-input[type="submit"] {
-	margin-top: 30px;
+fieldset {
+	padding-bottom: 30px;
 }
 
 ::placeholder {
@@ -229,6 +229,10 @@ Media Querry
 		padding-bottom: 0;
 		line-height: 50px;
 	}
+
+	fieldset:first-of-type {
+	padding-bottom: 0;
+}
 }
 
 

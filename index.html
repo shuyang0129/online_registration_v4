@@ -20,76 +20,85 @@
 			<div class="container">
 				<form action="index.html" method="post">
 					
-					<fieldset id="contact_info">
+						<fieldset id="contact_info">
 
-						<legend class="primary_color">Contact Information</legend>
-						
-						<!--Full Name-->
-						<label class="accent_color" for="full_name">Full Name</label>
-						<input id="full_name" class="light_gray_color" type="text" name="user_name">
+							<legend class="primary_color extra_border">Contact Information</legend>
+							
+							<!--Full Name-->
+							<label class="accent_color" for="full_name">Full Name</label>
+							<input id="full_name" class="light_gray_color" type="text" name="user_name" placeholder="Required" required="true"><br>
 
-						<!--Email-->
-						<label class="accent_color" for="user_email">Email</label>
-						<input id="user_email" class="light_gray_color" type="email" name="user_email">
+							<!--Email-->
+							<label class="accent_color" for="user_email">Email</label>
+							<input id="user_email" class="light_gray_color" type="email" name="user_email" placeholder="Required" required="true"><br>
 
-						<!--Phone Number-->
-						<label class="accent_color" for="user_phonenumber">Phone Number</label>
-						<input id="user_phonenumber" class="light_gray_color" type="tel" name="user_phonenumber">
+							<!--Phone Number-->
+							<label class="accent_color" for="user_phonenumber">Phone Number</label>
+							<input id="user_phonenumber" class="light_gray_color" type="tel" name="user_phonenumber"><br>
 
-						<!--Street Address-->
-						<label class="accent_color" for="user_address">Street Address</label>
-						<input id="user_address" class="light_gray_color" type="text" name="user_address">
+							<!--Street Address-->
+							<label class="accent_color" for="user_address">Street Address</label>
+							<input id="user_address" class="light_gray_color" type="text" name="user_address"><br>
 
-						<!--City-->
-						<label class="accent_color" for="user_city">City</label>
-						<input id="user_city" class="light_gray_color" type="text" name="user_city">
+							<!--City-->
+							<label class="accent_color" for="user_city">City</label>
+							<input id="user_city" class="light_gray_color" type="text" name="user_city"><br>
 
-						<!--State-->
-						<label class="accent_color" for="user_state">State</label>
-						<select class="light_gray_color">
-						 	<option value ="alabama">Alabama</option>
-						 	<option value ="alaska">Alaska</option>
-						 	<option value="hawaii">Hawaii</option>
-						 	<option value="kansas">Kansas</option>
-						 	<option value="new_york">New York</option>
-						 	<option value="oklahoma">Oklahoma</option>
-						 	<option value="texas">Texas</option>
-						 	<option value="washington">Washington</option>
-						 	<option value="indiana">Indiana</option>
-						</select>
+							<!--State-->
+							<label class="accent_color" for="user_state">State</label>
+							<select class="light_gray_color" placeholder="Choose State">
+								<!-- <option selected disabled>Choose State</option> -->
+								<option selected hidden>Choose State</option>
+							 	<option value ="alabama">Alabama</option>
+							 	<option value ="alaska">Alaska</option>
+							 	<option value="hawaii">Hawaii</option>
+							 	<option value="kansas">Kansas</option>
+							 	<option value="new_york">New York</option>
+							 	<option value="oklahoma">Oklahoma</option>
+							 	<option value="texas">Texas</option>
+							 	<option value="washington">Washington</option>
+							 	<option value="indiana">Indiana</option>
+							</select><br>
 
-						<!--Zip Code-->
-						<label class="accent_color" for="user_zip_code">Zip Code</label>
-						<input id="user_zip_code" class="light_gray_color" type="text" name="user_zip_code">				
+							<!--Zip Code-->
+							<label class="accent_color" for="user_zip_code">Zip Code</label>
+							<input id="user_zip_code" class="light_gray_color" type="text" name="user_zip_code"><br>				
 
-					</fieldset>
+						</fieldset>
+					
+						<fieldset id="newsletter">
+							
+							<legend class="primary_color">Newsletter</legend>
 
-					<fieldset id="newsletter">
-						
-						<legend class="primary_color">Newsletter</legend>
+							<!--Newsletter Type-->
+							<label class="accent_color">Select the newsletter you would like to recieve</label><br>
+						 	
+						 	<input id="html_news" class="accent_color" type="checkbox" name="html_news" value="html_news">
+						 	<label for="html_news">HTML News</label><br>
 
-						<!--Newsletter Type-->
-						<label class="accent_color">Select the newsletter you would like to recieve</label>
-					 	<input class="accent_color" type="checkbox" name="html_news" value="html_news">HTML News
-					 	<input class="accent_color" type="checkbox" name="css_news" value="css_news">CSS News
-					 	<input class="accent_color" type="checkbox" name="javascript_news" value="javascript_news">Javascript News
+						 	<input id="css_news" class="accent_color" type="checkbox" name="css_news" value="css_news">
+						 	<label for="css_news">CSS News</label><br>
+						 	<input id="javascript_news" class="accent_color" type="checkbox" name="javascript_news" value="javascript_news">
+						 	<label for="javascript_news">Javascript News</label><br>
 
-						<!--Newsletter Format-->
-						<label class="accent_color">Newsletter format</label>
-						<input class="accent_color" type="radio" name="format" value="html_format" checked> HTML
-				 		<input class="accent_color" type="radio" name="format" value="plain_text_format"> Plain text
+							<!--Newsletter Format-->
+							<label class="accent_color">Newsletter format</label><br>
+							<input id="html_format" class="accent_color" type="radio" name="format" value="html_format" checked>
+							<label for="html_format">HTML</label><br>
+					 		<input id="plain_text_format" class="accent_color" type="radio" name="format" value="plain_text_format">
+					 		<label for="plain_text_format">Plain text</label><br>
 
-						<!--Other Topic Suggestion-->
-						<label class="accent_color">Other topic you would like to hear about</label>
-						<textarea></textarea>
-						
-					</fieldset>
+							<!--Other Topic Suggestion-->
+							<label class="accent_color">Other topic you would like to hear about</label><br>
+							<textarea class="light_gray_color"></textarea>
+							
+						</fieldset>
+					
+						<!--Submit Button-->
+						<input class="button_style" type="submit" value="Sign Up">
 
-					<!--Submit Button-->
-					<input type="submit" value="Sign Up">
-
-					<p>Copyright The Code Review</p>
-
+						<p class="light_color">Copyright The Code Review</p>
+					
 				</form>
 			</div>
 		</main>

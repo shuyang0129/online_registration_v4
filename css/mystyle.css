@@ -51,13 +51,14 @@ input[type="submit"] {
 h2,
 legend {	
 	padding-top: 30px;
-	padding-bottom: 13px;
+	padding-bottom: 13px; 
 }
 
 p {
 	font-size: 1rem;
 	line-height: 1.2;
 	margin-bottom: 36px;
+	margin-top: 18px;
 }
 
 /*===========================
@@ -125,6 +126,10 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+input[type="submit"] {
+	margin-top: 30px;
+}
+
 ::placeholder {
 	text-align: right;
 	color: rgba(0,0,0, 0.16);
@@ -137,10 +142,6 @@ legend {
 	border-top: 2px solid #2D3945;
 	position: relative;
 }
-
-/*fieldset:first-child {
-	background-color: red;
-}*/
 
 .extra_border::before {
 	content: "";
@@ -170,10 +171,6 @@ p {
 	margin: 0 auto;
 }
 
-fieldset {
-	padding-bottom: 30px;
-}
-
 /*===========================
 Color
 ===========================*/
@@ -199,25 +196,34 @@ Color
 	color: white;
 }
 
+/*===========================
+ClearFix
+===========================*/
+
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
 
 /*===========================
 Media Querry
 ===========================*/
 
-/*@media (min-width: 768px) {
-	input[type="text"],
-	input[type="email"],
-	input[type="tel"],
-	select {
-		width: 70%;
-		float: right;
+@media (min-width: 768px) {
+	.one_line {
+		margin-bottom: 40px;
 	}
 
-	#contact_info label {
-		width: 100%;
-		line-height: 50px;
-		vertical-align: middle;
+	.one_line:first-of-type {
+		margin-top: 18px;
 	}
-}*/
+
+	.one_line input,
+	.one_line select {
+		width: 80%;
+		float: right;
+	}
+}
 
 

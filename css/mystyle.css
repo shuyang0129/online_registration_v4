@@ -97,7 +97,7 @@ select {
 
 select {
 	/* text color */
-	/*color: rgba(0,0,0, 0.16);*/
+	color: rgba(0,0,0, 0.16);
 	background: url(../img/ic_unfold_more.png) no-repeat calc(100% - 16px) center;
 	-webkit-appearance: none;
 	-moz-appearance: none;

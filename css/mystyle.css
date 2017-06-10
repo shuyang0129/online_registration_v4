@@ -148,9 +148,12 @@ fieldset {
 	padding-bottom: 30px;
 }
 
+::placeholder {
+	color: rgba(0,0,0, 0.38);
+}
+
 input::placeholder {
 	text-align: right;
-	color: rgba(0,0,0, 0.38);
 }
 
 /* Border Style--------------------*/
@@ -214,6 +217,14 @@ Color
 	color: white;
 }
 
+input[type="submit"]:hover {
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    transition:box-shadow 1s ease-in;
+    -moz-transition:box-shadow 1s ease-in;
+    -webkit-transition:box-shadow 1s ease-in;
+    -o-transition:box-shadow 1s ease-in;
+}
+
 /*===========================
 ClearFix
 ===========================*/
@@ -250,7 +261,8 @@ Media Querry
 
 	fieldset:first-of-type {
 	padding-bottom: 0;
-}
+	}
+
 }
 
 

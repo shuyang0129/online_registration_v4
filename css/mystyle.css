@@ -71,11 +71,13 @@ legend {
 	text-align: left;
 }
 
+span,
 input,
 label {
 	display: inline-block;
 }
 
+span,
 label {
 	font-size: 1rem;
 	padding-top: 18px;
